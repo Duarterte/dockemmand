@@ -1,17 +1,18 @@
 #include<ncurses.h>
+#include "/home/essi/Documents/clidocTerminal/lib/handle_window.h"
 using namespace std;
 
+
 int main(int argc, char *argv[]) {
-
+	Handle_window h;	
 	initscr();
-
-	printw("test");
+	h.printTest();
 
 	refresh();
-
 	getch();
 
 	endwin();
+	
 
 	return 0;
 }
